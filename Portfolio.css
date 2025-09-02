@@ -1,113 +1,106 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+/* Custom CSS to complement Tailwind */
 
+/* General and Fonts */
 body {
-    background: linear-gradient(135deg, #000000, #0d47a1, #000000);
-    background-size: 300% 300%;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
-.hero {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    width: 90%;
-    gap: 2rem;
-    text-align: left;
-    animation: fadeIn 1.5s ease;
-}
-
-.content h2 {
-    font-size: 1.8rem;
-    margin-bottom: 0.5rem;
-    color: #e0e0e0;
-}
-
-.content h2 span {
-    color: #42a5f5;
-}
-
-.content h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.content p {
-    font-size: 1rem;
-    line-height: 1.5;
-    margin-bottom: 1.5rem;
-    max-width: 400px;
-    color: #cfd8dc;
-}
-
-.btn {
-    display: inline-block;
-    background: #2196f3;
-    color: #ffffff;
-    padding: 0.8rem 1.5rem;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: all 0.3s ease;
-}
-
-.btn:hover {
-    background: #1976d2;
-    transform: scale(1.05);
-}
-
-.profile img {
-    width: 250px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 20px;
-    border: 3px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
-}
-
-.profile img:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-}
-
-/* Fade-in animation */
-@keyframes fadeIn {
+/* Animations */
+@keyframes fadeInUp {
     from {
         opacity: 0;
         transform: translateY(20px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .content h1 {
-        font-size: 2rem;
-    }
-
-    .profile img {
-        width: 200px;
-        height: 200px;
-    }
+.animate-fadeInUp {
+    animation: fadeInUp 0.8s ease-out forwards;
 }
+.animate-fadeInUp.delay-200 { animation-delay: 0.2s; }
+
+/* Sections */
+.section-heading {
+    @apply text-4xl md:text-5xl font-bold text-center mb-12 relative text-white;
+}
+.section-heading::after {
+    content: '';
+    @apply block w-20 h-1 bg-blue-500 mx-auto mt-4 rounded-full;
+}
+
+/* Buttons */
+.btn {
+    @apply font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:-translate-y-1 relative overflow-hidden;
+}
+.btn-primary {
+    @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+.btn-secondary {
+    @apply bg-transparent border-2 border-white text-white hover:bg-white hover:text-gray-900;
+}
+.btn-primary-sm {
+    @apply bg-blue-600 text-white py-2 px-4 rounded-full text-sm hover:bg-blue-700 transition-colors duration-300;
+}
+.btn-secondary-sm {
+    @apply bg-transparent border border-blue-600 text-blue-600 py-2 px-4 rounded-full text-sm hover:bg-blue-600 hover:text-white transition-colors duration-300;
+}
+
+/* Nav links */
+.nav-link {
+    @apply text-lg text-gray-300 hover:text-blue-500 transition-colors duration-300 relative;
+}
+.nav-link::after {
+    content: '';
+    @apply absolute w-0 h-0.5 bg-blue-500 left-0 bottom-0 transition-all duration-300;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+    @apply w-full;
+}
+
+/* Theme Toggle */
+body.light .bg-gray-900 { @apply bg-white; }
+body.light .text-gray-300 { @apply text-gray-700; }
+body.light .text-white { @apply text-gray-900; }
+body.light .border-gray-800 { @apply border-gray-300; }
+body.light .bg-gray-900\/50 { @apply bg-white/50; }
+body.light .text-yellow-400 { @apply text-gray-900; }
+body.light .bg-gray-700 { @apply bg-gray-300; }
+body.light .hover\:bg-gray-800:hover { @apply hover:bg-gray-200; }
+body.light .social-icon { @apply text-gray-600; }
+body.light .form-input { @apply bg-gray-100 border-gray-300 text-gray-900; }
+
+/* Section Fade-in Effect */
+.section-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Skill Cards */
+.skill-card {
+    @apply bg-gray-800 p-6 rounded-lg text-center shadow-lg transform transition-all duration-300 hover:bg-blue-500 hover:scale-105 hover:shadow-xl;
+}
+body.light .skill-card { @apply bg-gray-100 text-gray-800 hover:bg-blue-500 hover:text-white; }
+body.light .skill-card:hover {
+    box-shadow: 0 0 20px rgba(0, 128, 255, 0.4);
+}
+
+/* Project Cards */
+.project-card {
+    @apply bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl;
+}
+body.light .project-card { @apply bg-gray-100; }
+
+/* Contact Form */
+.form-input {
+    @apply w-full bg-gray-800 border border-gray-700 rounded-md p-3 text-white transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+/* Social Icons */
+.social-icon {
+    @apply text-gray-300 transition-colors duration-300 transform hover:text-blue-500 hover:scale-110;
+}
+body.light .social-icon { @apply text-gray-700 hover:text-blue-500; }
