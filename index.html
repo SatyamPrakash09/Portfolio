@@ -1,27 +1,231 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Satyam | Frontend Developer</title>
+    <title>Satyam Prakash | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Portfolio.css">
 </head>
+<body class="bg-gray-900 text-gray-300 font-poppins transition-colors duration-300">
 
-<body>
-    <section class="hero">
-        <div class="content">
-            <h2>Hi, I am <span>Satyam</span></h2>
-            <h1 id="role">FRONTEND DEVELOPER</h1>
-            <p>Computer Science Engineering (CSE) Student passionate about Web Development & AI Integration.</p>
-            <a href="#contact" class="btn">Contact Me</a>
+    <header class="fixed top-0 left-0 right-0 z-50 p-4 transition-all duration-300 backdrop-blur-md bg-gray-900/50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-500 hover:text-cyan-400 transition-colors duration-300">SP</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-800 transition-colors duration-300">
+                <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 11a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zm-4 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zm-4-4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zm8-2a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.636 5.636a1 1 0 011.414 0l.707.707a1 1 0 01-1.414 1.414l-.707-.707a1 1 0 010-1.414zm7.07 7.07a1 1 0 011.414 0l.707.707a1 1 0 01-1.414 1.414l-.707-.707a1 1 0 010-1.414zm-9.192 0a1 1 0 010 1.414l.707.707a1 1 0 01-1.414-1.414l-.707-.707a1 1 0 011.414 0zm14.142-9.192a1 1 0 010 1.414l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 0zM10 8a2 2 0 100 4 2 2 0 000-4z"></path>
+                </svg>
+            </button>
+            <button id="mobile-menu-button" class="md:hidden p-2 rounded-md hover:bg-gray-800 transition-colors duration-300">
+                <svg class="w-6 h-6 text-gray-300" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M3 5h14a1 1 0 010 2H3a1 1 0 010-2zm0 6h14a1 1 0 010 2H3a1 1 0 010-2zm0 6h14a1 1 0 010 2H3a1 1 0 010-2z"></path>
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden absolute top-16 left-0 right-0 bg-gray-900/90 backdrop-blur-md p-4 transition-all duration-300">
+            <a href="#home" class="block py-2 nav-link text-center">Home</a>
+            <a href="#about" class="block py-2 nav-link text-center">About</a>
+            <a href="#skills" class="block py-2 nav-link text-center">Skills</a>
+            <a href="#projects" class="block py-2 nav-link text-center">Projects</a>
+            <a href="#contact" class="block py-2 nav-link text-center">Contact</a>
         </div>
-        <div class="profile">
-            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80" alt="Satyam">
-        </div>
-    </section>
+    </header>
 
+    <main>
+        <section id="home" class="relative min-h-screen flex flex-col justify-center items-center text-center p-8 overflow-hidden">
+            <div id="particles-js" class="absolute inset-0 z-0"></div>
+            <div class="relative z-10">
+                <h1 class="text-5xl md:text-7xl font-bold mb-4 animate-fadeInUp">Hi, I'm Satyam Prakash</h1>
+                <p class="text-xl md:text-2xl font-light text-blue-300 mb-8 animate-fadeInUp delay-200">Web Developer & AI/ML Enthusiast</p>
+                <div class="space-y-4 md:space-y-0 md:space-x-4">
+                    <button class="btn btn-primary" data-section="projects">View My Work</button>
+                    <button class="btn btn-secondary" data-section="contact">Contact Me</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 md:py-32 container mx-auto px-4 opacity-0 transform translate-y-20 transition-all duration-700">
+            <h2 class="section-heading">About Me</h2>
+            <div class="md:flex md:space-x-12 items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0">
+                    <img src="https://via.placeholder.com/400x400.png?text=Profile+Image" alt="Profile Image" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-2/3">
+                    <p class="text-lg mb-6 leading-relaxed">I am a passionate web developer and AI/ML enthusiast with a keen eye for creating clean, efficient, and user-friendly applications. I thrive on solving complex problems and am constantly learning new technologies to build innovative solutions. My journey in tech has allowed me to combine my love for design with powerful backend logic, resulting in robust and beautiful projects.</p>
+                    <div class="space-y-4">
+                        <div>
+                            <span class="font-bold">Web Development</span>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5 mt-2">
+                                <div class="bg-blue-500 h-2.5 rounded-full" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="font-bold">AI/ML</span>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5 mt-2">
+                                <div class="bg-blue-500 h-2.5 rounded-full" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <span class="font-bold">Backend Development</span>
+                            <div class="w-full bg-gray-700 rounded-full h-2.5 mt-2">
+                                <div class="bg-blue-500 h-2.5 rounded-full" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20 md:py-32 container mx-auto px-4 opacity-0 transform translate-y-20 transition-all duration-700">
+            <h2 class="section-heading">My Skills</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/64x64.png?text=HTML" alt="HTML Icon" class="mx-auto mb-2">
+                    <p>HTML</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/64x64.png?text=CSS" alt="CSS Icon" class="mx-auto mb-2">
+                    <p>CSS</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/64x64.png?text=JS" alt="JavaScript Icon" class="mx-auto mb-2">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/64x64.png?text=React" alt="React Icon" class="mx-auto mb-2">
+                    <p>React</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/64x64.png?text=Node" alt="Node.js Icon" class="mx-auto mb-2">
+                    <p>Node.js</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/64x64.png?text=Express" alt="Express.js Icon" class="mx-auto mb-2">
+                    <p>Express.js</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/64x64.png?text=MongoDB" alt="MongoDB Icon" class="mx-auto mb-2">
+                    <p>MongoDB</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/64x64.png?text=MySQL" alt="MySQL Icon" class="mx-auto mb-2">
+                    <p>MySQL</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/64x64.png?text=Python" alt="Python Icon" class="mx-auto mb-2">
+                    <p>Python</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/64x64.png?text=TF" alt="TensorFlow Icon" class="mx-auto mb-2">
+                    <p>TensorFlow</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/64x64.png?text=Git" alt="Git/GitHub Icon" class="mx-auto mb-2">
+                    <p>Git/GitHub</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/64x64.png?text=ESP32" alt="ESP32 Icon" class="mx-auto mb-2">
+                    <p>ESP32</p>
+                </div>
+                <div class="skill-card">
+                    <img src="https://via.placeholder.com/64x64.png?text=Tailwind" alt="TailwindCSS Icon" class="mx-auto mb-2">
+                    <p>TailwindCSS</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20 md:py-32 container mx-auto px-4 opacity-0 transform translate-y-20 transition-all duration-700">
+            <h2 class="section-heading">My Projects</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/600x400.png?text=Project+1" alt="Project 1" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Project Title 1</h3>
+                        <p class="text-sm text-gray-400 mb-4">A brief description of the project, its purpose, and the technologies used.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="btn btn-primary-sm">View Live</a>
+                            <a href="#" class="btn btn-secondary-sm">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/600x400.png?text=Project+2" alt="Project 2" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Project Title 2</h3>
+                        <p class="text-sm text-gray-400 mb-4">A brief description of the project, its purpose, and the technologies used.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="btn btn-primary-sm">View Live</a>
+                            <a href="#" class="btn btn-secondary-sm">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/600x400.png?text=Project+3" alt="Project 3" class="w-full h-48 object-cover rounded-t-lg">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Project Title 3</h3>
+                        <p class="text-sm text-gray-400 mb-4">A brief description of the project, its purpose, and the technologies used.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="btn btn-primary-sm">View Live</a>
+                            <a href="#" class="btn btn-secondary-sm">GitHub Repo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 md:py-32 container mx-auto px-4 opacity-0 transform translate-y-20 transition-all duration-700">
+            <h2 class="section-heading">Contact Me</h2>
+            <div class="max-w-xl mx-auto">
+                <form id="contact-form" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-400">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-400">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-400">Message</label>
+                        <textarea id="message" name="message" rows="4" class="form-input" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full btn btn-primary">Send Message</button>
+                </form>
+                <div class="flex justify-center space-x-6 mt-8">
+                    <a href="https://linkedin.com" target="_blank" class="social-icon">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.763s.784-1.763 1.75-1.763 1.75.79 1.75 1.763-.783 1.763-1.75 1.763zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <a href="https://github.com" target="_blank" class="social-icon">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.809 1.309 3.491.997.107-.775.418-1.308.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.381 1.236-3.221-.124-.3-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23a11.597 11.597 0 016 0c2.293-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.876.118 3.176.771.84 1.236 1.911 1.236 3.221 0 4.609-2.801 5.625-5.471 5.922.429.369.814 1.052.814 2.112v3.137c0 .318.192.694.801.576 4.765-1.59 8.196-6.088 8.196-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="mailto:youremail@example.com" class="social-icon">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 10.74c-.201.201-.45.3-.74.3-.29 0-.539-.099-.74-.3-.201-.201-.3-.45-.3-.74s.099-.539.3-.74l4.288-4.288c.201-.201.45-.3.74-.3s.539.099.74.3l4.288 4.288c.201.201.3.45.3.74s-.099.539-.3.74c-.201.201-.45.3-.74.3s-.539-.099-.74-.3l-3.548-3.548-3.548 3.548zM24 6.75l-12 6.574-12-6.574v-2.25l12 6.574 12-6.574v2.25z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center py-6 border-t border-gray-800">
+        <p class="text-sm text-gray-500">&copy; 2024 Satyam Prakash. All rights reserved.</p>
+    </footer>
+
+    <button id="back-to-top" class="fixed bottom-4 right-4 p-3 rounded-full bg-blue-500 text-white shadow-lg opacity-0 transform scale-0 transition-all duration-300 hover:bg-blue-600 focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path></svg>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="Portfolio.js"></script>
 </body>
-
 </html>
