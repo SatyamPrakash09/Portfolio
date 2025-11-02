@@ -73,10 +73,10 @@ body, .App {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px);
   color: white;
+  margin-bottom: 20px !important;
+  padding: 20px;
 }
-.card{
-  margin-bottom: 20px;
-}
+
 .card-image{
   width:400px;
   height:450px;

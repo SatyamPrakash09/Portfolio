@@ -7,13 +7,13 @@ function Projects() {
     <div className="container my-5">
       <div className="row justify-content-center">
         <div className="col-10 col-md-6 col-lg-4">
-          <div className="project-card shadow-lg border-0">
+          <div className="project-card  shadow-lg border-0">
             <img
               src="https://images.pexels.com/photos/2469234/pexels-photo-2469234.jpeg"
               alt="Project 1"
               className="card-img-top project_image"
             />
-            <div className="card-body text-center">
+            <div className="card-body  text-center">
               <h5 className="card-title">Project 1</h5>
               <p className="card-text text-muted">
                 A short description about your awesome project.
