@@ -1,38 +1,154 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body, .App {
+  background-image: url("https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg");
+  background-size: cover;
+  background-position: center;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 0;
+}
+
+/* Transparent Navbar with white text */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.05) !important; /* light glass effect */
+  backdrop-filter: blur(10px);
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-radius: 20px;
+}
+
+/* White text for brand + links */
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: white !important;
+  border-radius: 20px;
+}
+
+/* Hover color */
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+  color: #00bfff !important;
+  border-radius: 20px;
+}
+
+
+
+
+/* Hover effect for pill links */
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.35) !important;
+  color: black !important;
+  border-radius: 20px;
+}
+
+/* Hamburger toggler button */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  
+}
+
+/* Hamburger icon (the three bars) */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Mobile dropdown background */
+.navbar-collapse {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.Home{
   color: white;
 }
+.project-card{
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 800px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  color: white;
+}
+.card-image{
+  width:400px;
+  height:450px;
+  border-radius: 20px;
+  margin-left: 40px;
 
-.App-link {
-  color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-des{
+  border: 2px solid rgb(245, 241, 241);
 }
+
+body {
+  background: url('https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.profile-card {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 800px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.profile-img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+h2, h5 {
+  margin-bottom: 0.5rem;
+}
+
+.lead {
+  color: #ddd;
+  font-size: 1rem;
+}
+
+.project_image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.navbar_image{
+  height: 85px;
+  width: 85px;
+  border-radius: 60px;
+}
+.project_image{
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  margin-bottom: 10px;
+}
+
+.card-text{
+  color: rgb(88, 85, 85) !important;
+}
+
