@@ -8,9 +8,9 @@ function Home() {
         <div className="row align-items-center">
           <div className="col-md-4 text-center">
             <img
-              src="https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg"
+              src="https://media.licdn.com/dms/image/v2/D5603AQEbtEUbqnkEew/profile-displayphoto-scale_400_400/B56ZnZ8oyDJwAg-/0/1760298177280?e=1763596800&v=beta&t=uZ6K8odSITxd7sXbPjiGxkO6S4mp8LKxHzTcdbbXiyA"
               alt="profile"
-              className="profile-img img-fluid rounded-4"
+              className="profile-img img-fluid rounded-circle"
             />
           </div>
           <div className="col-md-8 text-light">
