@@ -37,7 +37,7 @@ function Projects() {
                 A smart AI-powered travel assistant built using Gemini for natural language understanding and Gradio for a sleek, interactive user interface.
               </p>
               <div className="card-button">
-                <a href="https://github.com/SatyamPrakash09/Traveller-Buddy" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Open</a>
+                <a href="https://github.com/SatyamPrakash09/TravellerBuddy" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Open</a>
               </div>              
             </div>
           </div>
