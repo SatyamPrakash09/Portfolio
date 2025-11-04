@@ -3,8 +3,8 @@ body, .App {
   background-size: cover;
   background-position: center;
   min-height: 100vh;
-  height: auto;
-  margin: 0;
+  /* height: 80%; */
+  margin: 0px;
 }
 
 /* Transparent Navbar with white text */
@@ -158,3 +158,75 @@ h2, h5 {
   color: rgb(178, 174, 174) !important;
 }
 
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+/* Flex layout to push footer to bottom */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main area grows to fill screen space */
+.main-content {
+  flex: 1;
+}
+
+/* Optional: Footer styling */
+footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1; /* pushes footer to bottom */
+}
+
+html, body, #root, .App {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* 🚫 Prevent scrolling */
+}
+
+/* Make the layout a vertical flexbox */
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main area fills available space */
+.main-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Footer always sticks at the bottom */
+footer {
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
