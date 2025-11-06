@@ -6,6 +6,7 @@ import Footer from './footer.js';
 import Navbar from './Navbar.js';
 import Home from './Home.js';
 import Projects from './Projects.js';
+import { Analytics } from "@vercel/analytics/react"
 
 
 
@@ -20,6 +21,7 @@ function App() {
         <section id="project-section">
           <Projects/>
         </section>
+        <Analytics/>
         <Footer />
     </>
 

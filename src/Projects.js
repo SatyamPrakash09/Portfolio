@@ -4,8 +4,33 @@ import './App.css';
 
 function Projects() {
   return (
+
     <div className="container my-5 projects">
       <div className="row justify-content-center">
+        <div className="tech-stack pt-4 pb-4 mb-5" id = "tech-stack">
+          <h1 className='text-light mb-3 text-center'>💻 Tech Stack:</h1>
+            <div align="center">
+              <img class="tech-logo pe-2 ps-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="javascript logo"  />
+              <img class="tech-logo pe-2 ps-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="react logo"  />
+              <img class="tech-logo pe-2 ps-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="40" alt="python logo"  />
+              <img class="tech-logo pe-2 ps-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" height="40" alt="jupyter logo"  />
+              <img class="tech-logo pe-2 ps-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" alt="html5 logo"  />
+              <img class="tech-logo pe-2 ps-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" alt="css logo"  />
+              <img class="tech-logo pe-2 ps-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" height="40" alt="bootstrap logo"  />
+              <img class="tech-logo pe-2 ps-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" height="40" alt="cplusplus logo"  />
+              <img class="tech-logo pe-2 ps-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" alt="mysql logo"  />
+              <img class="tech-logo pe-2 ps-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" height="40" alt="arduino logo"  />
+              <img class="tech-logo pe-2 ps-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40" alt="java logo"  />
+              <img class="tech-logo pe-2 ps-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="nodejs logo"  />
+  
+              <img class="tech-logo pe-2 ps-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" height="40" alt="npm logo"  />
+
+              <img class="tech-logo pe-2 ps-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" alt="vscode logo"  />
+
+              <img class="tech-logo pe-2 ps-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="40" alt="git logo"  />
+
+            </div>
+        </div>
         <div className="col-10 col-md-6 col-lg-4">
           <div className="project-card  shadow-lg border-0">
             <img
@@ -60,6 +85,7 @@ function Projects() {
             </div>
           </div>
         </div>
+
       </div>
     </div>
   );

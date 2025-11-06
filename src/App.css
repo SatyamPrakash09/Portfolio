@@ -207,3 +207,16 @@ footer {
   justify-content: center;
   flex-shrink: 0;
 }
+
+.tech-stack{
+   background-color: rgba(19, 19, 19, 0.5) !important; /* light glass effect */
+  backdrop-filter: blur(10px);
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 16px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-radius: 20px;
+
+}
