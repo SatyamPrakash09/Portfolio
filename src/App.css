@@ -90,14 +90,7 @@ body, .App {
   border: 2px solid rgb(245, 241, 241);
 }
 
-body {
-  background: url('https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg') no-repeat center center fixed;
-  background-size: cover;
-  font-family: 'Poppins', sans-serif;
-  color: white;
-  margin: 0;
-  padding: 0;
-}
+
 
 .home {
   display: flex;
@@ -159,10 +152,6 @@ h2, h5 {
 }
 
 
-html, body, #root {
-  height: 100%;
-  margin: 0;
-}
 
 /* Flex layout to push footer to bottom */
 .App {
@@ -184,25 +173,13 @@ footer {
   padding: 1rem 0;
 }
 
-html, body, #root {
-  height: 100%;
-  margin: 0;
-}
 
-.App {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
 
-.main-content {
-  flex: 1; /* pushes footer to bottom */
-}
 
 html, body, #root, .App {
   height: 100%;
   margin: 0;
-  overflow: hidden; /* 🚫 Prevent scrolling */
+  /* overflow: hidden; 🚫 Prevent scrolling */
 }
 
 /* Make the layout a vertical flexbox */

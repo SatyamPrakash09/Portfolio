@@ -7,22 +7,22 @@ import Navbar from './Navbar.js';
 import Home from './Home.js';
 import Projects from './Projects.js';
 
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 function App() {
   return (
-    <Router>
-      <div className="App">
+    <>
         <Navbar />
-        <div className="main-content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-          </Routes>
-        </div>
+        <section id="home-section">
+          <Home/> 
+        </section>
+
+        <section id="project-section">
+          <Projects/>
+        </section>
         <Footer />
-      </div>
-    </Router>
+    </>
+
   );
 }
 

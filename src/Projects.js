@@ -4,7 +4,7 @@ import './App.css';
 
 function Projects() {
   return (
-    <div className="container my-5">
+    <div className="container my-5 projects">
       <div className="row justify-content-center">
         <div className="col-10 col-md-6 col-lg-4">
           <div className="project-card  shadow-lg border-0">
