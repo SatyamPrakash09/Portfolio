@@ -5,8 +5,8 @@ import './App.css'
 
 function Navbar() {
   return (
-    <div className='myNav sticky-top'>
-      <nav className="navbar navbar-expand-lg bg-light ">
+    <div className='myNav sticky-top '>
+      <nav className="navbar navbar-expand-lg  ">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             <img src="./portfolio_logo.png" alt="Satyam Prakash" className="navbar_image" />
@@ -16,7 +16,7 @@ function Navbar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav ms-auto">
-              <HashLink className="nav-link active" to="#home-section">Home</HashLink>
+              <HashLink className="nav-link active" to="/#">Home</HashLink>
               <HashLink className="nav-link" to="#project-section">Projects</HashLink>
               <HashLink className="nav-link" to="#contact">Contact</HashLink>
             </div>

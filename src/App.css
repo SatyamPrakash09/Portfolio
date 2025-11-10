@@ -1,5 +1,6 @@
 body, .App {
-  background-image: url("https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg");
+  /* background-image: url("https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg"); */
+  /* background-image: url(../public/e9d40d26810225.5635acac91f14.gif); */
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -9,9 +10,10 @@ body, .App {
 
 /* Transparent Navbar with white text */
 .navbar {
-  background-color: rgba(255, 255, 255, 0.05) !important; /* light glass effect */
-  backdrop-filter: blur(10px);
-  font-size: 20px;
+  /* background-color: rgba(255, 255, 255, 0.05) !important; light glass effect */
+  background-color: transparent;
+  /* backdrop-filter: blur(4px); */
+  font-size: 17px;
   padding: 10px 20px;
   border-radius: 16px;
   position: sticky;
@@ -40,7 +42,7 @@ body, .App {
 /* Hover effect for pill links */
 .nav-link:hover {
   background-color: rgba(255, 255, 255, 0.35) !important;
-  color: black !important;
+  color: rgba(0, 0, 0, 0) !important;
   border-radius: 20px;
 }
 
@@ -57,8 +59,8 @@ body, .App {
 
 /* Mobile dropdown background */
 .navbar-collapse {
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(12px);
+  background-color: rgba(0, 0, 0, 0);
+  /* backdrop-filter: blur(12px); */
   border-radius: 12px;
   padding: 10px;
 }
@@ -92,14 +94,14 @@ body, .App {
 
 
 
-.home {
+/* .home {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 90vh;
   margin-right: 20px;
   margin-left: 20px;
-}
+} */
 
 .profile-card {
   background: rgba(0, 0, 0, 0.6);
@@ -113,9 +115,12 @@ body, .App {
 .profile-img {
   width: 100%;
   height: auto;
-  border-radius: 15px;
-  object-fit: cover;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.profile-img:hover{
+  scale: 1.07;
+  transition: 400ms ease-in-out;
 }
 
 h2, h5 {
@@ -134,8 +139,8 @@ h2, h5 {
   border-radius: 10px 10px 0 0;
 }
 .navbar_image{
-  height: 85px;
-  width: 85px;
+  height: 55px;
+  width: 55px;
   border-radius: 60px;
 }
 .project_image{
@@ -154,11 +159,7 @@ h2, h5 {
 
 
 /* Flex layout to push footer to bottom */
-.App {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
+
 
 /* Main area grows to fill screen space */
 .main-content {
@@ -167,7 +168,7 @@ h2, h5 {
 
 /* Optional: Footer styling */
 footer {
-  background-color: #111;
+  background-color: #0000009f !important;
   color: #fff;
   text-align: center;
   padding: 1rem 0;
@@ -176,11 +177,7 @@ footer {
 
 
 
-html, body, #root, .App {
-  height: 100%;
-  margin: 0;
-  /* overflow: hidden; 🚫 Prevent scrolling */
-}
+
 
 /* Make the layout a vertical flexbox */
 .App {
@@ -200,7 +197,7 @@ html, body, #root, .App {
 /* Footer always sticks at the bottom */
 footer {
   height: 30px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0);
   color: white;
   display: flex;
   align-items: center;
@@ -208,6 +205,11 @@ footer {
   flex-shrink: 0;
 }
 
+
+.tech-logo:hover{
+  scale: 1.07;
+  transition: 300ms ease-in-out;
+}
 .tech-stack{
    background-color: rgba(19, 19, 19, 0.5) !important; /* light glass effect */
   backdrop-filter: blur(10px);

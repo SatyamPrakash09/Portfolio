@@ -31,8 +31,11 @@ function Projects() {
 
             </div>
         </div>
+        <div className='col-12 text-light mb-3 p-3 text-center'>
+          <h1>💻 Projects:</h1>
+        </div>
         <div className="col-10 col-md-6 col-lg-4">
-          <div className="project-card  shadow-lg border-0">
+          <div className="project-card shadow-lg border-0">
             <img
               src="https://socialify.git.ci/SatyamPrakash09/Pygame/image?custom_description=Portfolio+Web+Made+In+React&description=1&font=Source+Code+Pro&name=1&owner=1&pattern=Circuit+Board&theme=Dark"
               alt="Project 1"

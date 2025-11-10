@@ -3,12 +3,12 @@ import './App.css';
 
 function Home() {
   return (
-    <div className="home">
+    <div className="home mb-4 mt-4">
       <div className="profile-card container">
         <div className="row align-items-center">
           <div className="col-md-4 text-center">
             <img
-              src="https://media.licdn.com/dms/image/v2/D5603AQEbtEUbqnkEew/profile-displayphoto-scale_400_400/B56ZnZ8oyDJwAg-/0/1760298177280?e=1763596800&v=beta&t=uZ6K8odSITxd7sXbPjiGxkO6S4mp8LKxHzTcdbbXiyA"
+              src="https://media.licdn.com/dms/image/v2/D5603AQGCYmIR3dqgRQ/profile-displayphoto-scale_400_400/B56ZpacQSnJsAg-/0/1762453949130?e=1764201600&v=beta&t=zHy0hkmmySRuKfqpO_WXY8MOUPCjv6AJBgyH-n3DWd0"
               alt="profile"
               className="profile-img img-fluid rounded-circle"
             />

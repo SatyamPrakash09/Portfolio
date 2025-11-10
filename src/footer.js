@@ -4,7 +4,7 @@ import './App.css'
 
 function Footer() {
   return (
-    <footer className="bg-dark text-light py-2 mt-5">
+    <footer className="bg-none text-light py-2 mt-5">
       <div className="container d-flex flex-column flex-md-row justify-content-between align-items-center">
 
         {/* Right side - Social Icons */}
