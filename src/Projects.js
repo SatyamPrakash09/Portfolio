@@ -34,17 +34,26 @@ function Projects() {
         <div className='col-12 text-light mb-3 p-3 text-center'>
           <h1>💻 Projects:</h1>
         </div>
-        <div className="col-10 col-md-6 col-lg-4">
-          <div className="project-card shadow-lg border-0">
+        <div className="col-12">
+          <div className="project-card shadow-lg border-0 d-flex flex-row">
             <img
               src="https://socialify.git.ci/SatyamPrakash09/Pygame/image?custom_description=Portfolio+Web+Made+In+React&description=1&font=Source+Code+Pro&name=1&owner=1&pattern=Circuit+Board&theme=Dark"
               alt="Project 1"
               className="card-img-top project_image"
             />
-            <div className="card-body  text-center">
+            <div className="card-body  text-center d-flex flex-column justify-content-center">
               <h5 className="card-title">Pygame</h5>
               <p className="card-text text-muted">
                 A small collection of experimental and educational Python games made with Pygame!
+
+              </p>
+              <p class="card-list">
+                <ul>
+                  <li>Interactive Pygame windows showcasing graphics and animations.</li>
+                  <li>Learning-oriented scripts to explore Pygame basics.</li>
+                  <li>Support for handling events, drawing, and sprite movement.</li>
+                </ul>
+
               </p>
               <div className="card-button">
                 <a href="https://github.com/SatyamPrakash09/Pygame" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Open</a>
@@ -52,38 +61,80 @@ function Projects() {
             </div>
           </div>
         </div>
-        <div className="col-10 col-md-6 col-lg-4">
-          <div className="project-card shadow-lg border-0">
+        <div className="col-12">
+          <div className="project-card shadow-lg border-0 d-flex flex-row">
             <img
               src="https://camo.githubusercontent.com/a38c8bbb4b993193599e52edf42885c1ddb78c927106964b28d646af3490e144/68747470733a2f2f736f6369616c6966792e6769742e63692f53617479616d5072616b61736830392f54726176656c6c657242756464792f696d6167653f637573746f6d5f6465736372697074696f6e3d412b736d6172742b41492d706f77657265642b74726176656c2b617373697374616e742b6275696c742b7573696e672b47656d696e692b666f722b6e61747572616c2b6c616e67756167652b756e6465727374616e64696e672b616e642b47726164696f2b666f722b612b736c65656b2532432b696e7465726163746976652b757365722b696e746572666163652e26637573746f6d5f6c616e67756167653d507974686f6e266465736372697074696f6e3d3126666f6e743d536f757263652b436f64652b50726f266c616e67756167653d31266e616d653d31267468656d653d4461726b"
               alt="Project 1"
               className="card-img-top project_image"
             />
-            <div className="card-body text-center">
+            <div className="card-body  text-center d-flex flex-column justify-content-center">
               <h5 className="card-title">Traveler Buddy</h5>
               <p className="card-text text-muted">
                 A smart AI-powered travel assistant built using Gemini for natural language understanding and Gradio for a sleek, interactive user interface.
+                
               </p>
+              <ul>
+                  <li>Conversational Travel Planning : Ask about destinations, itineraries, packing tips, weather insights, etc.</li>
+                  <li>Instant Web Interface – Built with Gradio; interact via your browser with no complex setup.</li>
+                  <li>Fast Prototyping – Ideal for experimenting with AI responses and user flows.</li>
+                </ul>
               <div className="card-button">
                 <a href="https://github.com/SatyamPrakash09/TravellerBuddy" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Open</a>
               </div>              
             </div>
           </div>
         </div>
-        <div className="col-10 col-md-6 col-lg-4">
-          <div className="project-card shadow-lg border-0">
+        <div className="col-12">
+          <div className="project-card shadow-lg border-0 d-flex flex-row">
             <img
               src="https://socialify.git.ci/SatyamPrakash09/Image_blur_and_edge_detection/image?language=1&name=1&owner=1&pattern=Plus&theme=Dark"
               alt="Project 1"
               className="card-img-top project_image"
             />
-            <div className="card-body text-center">
-              <h5 className="card-title">Image Edge detector and Image Blur </h5>
+            <div className="card-body  text-center d-flex flex-column justify-content-center">
+              <h5 className="card-title">  <span style={{color:'white', fontFamily:'cursive'}}>"Pyxi"</span> an Image Edge detector and Image Blur</h5>
               <p className="card-text">
                 A Python project to apply image blurring and edge detection filters to images using the Pillow (PIL) library. This tool allows you to download images from URLs, apply filters, and save the results with timestamped filenames.
               </p>
+              <p class="card-list">
+                <ul>
+                  <li>Download image from a URL</li>
+                  <li>Save original image with a timestamp</li>
+                  <li>Apply various blurring filters (e.g., Gaussian Blur, Box Blur)</li>
+                  <li>Apply edge detection</li>
+                  <li>Save processed images in separate folders</li>
+                </ul>
+
+              </p> 
               <div className="card-button">
-                <a href="https://github.com/SatyamPrakash09/Image_blur_and_edge_detection" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Open</a>
+                <a href="https://github.com/SatyamPrakash09/Pyxi" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Open</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-12">
+          <div className="project-card shadow-lg border-0 d-flex flex-row">
+            <img
+              src="https://socialify.git.ci/SatyamPrakash09/ISS_Tracker/image?custom_description=This+Python+project+tracks+the+International+Space+Station+%28ISS%29+in+real-time+on+a+world+map++and+fetching+data+via+the+wheretheiss.at+API%2C+and+logs+location+data+to+a+CSV+file.&description=1&language=1&name=1&pattern=Plus&theme=Dark"
+              alt="Project 1"
+              className="card-img-top project_image "/>
+            <div className="card-body  text-center d-flex flex-column justify-content-center">
+              <h5 className="card-title">International Space Station Tracker </h5>
+              <p className="card-text">
+                This Python project tracks the International Space Station (ISS) in real-time on a world map using Turtle Graphics, fetching data via the wheretheiss.at API, and logs location data to a CSV file.
+              </p>
+              <p class="card-list">
+                <ul>
+                  <li>Realtime tracking of ISS coordinates.</li>
+                  <li>Logs latitude, longitude, velocity, and timestamp to a CSV file.</li>
+                  <li>Custom ISS icon and background image for better visualization.</li>
+                  <li>Displays movement on a world map using the Turtle graphics module.</li>
+                </ul>
+
+              </p>                            
+              <div className="card-button">
+                <a href="https://github.com/SatyamPrakash09/ISS_Tracker" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Open</a>
               </div>
             </div>
           </div>
